@@ -4,6 +4,7 @@ import networkx as nx
 import data_utils as utils
 import graphlet_kernel as gk
 import wl_kernel as wk
+import closed_walk_kernel as ck
 
 
 def read_data():
@@ -32,7 +33,7 @@ def run_eval():
     labels = get_labels(data)
     clf = svm.SVC(kernel="precomputed")
 
-    kernels = {"WL Kernel": wk, "Graph Kernel": gk}
+    kernels = {"Closed Walk Kernel": ck, "WL Kernel": wk}
 
     for kernel in kernels.keys():
         for key in data.keys():
