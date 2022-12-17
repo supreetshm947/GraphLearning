@@ -8,7 +8,7 @@ import networkx as nx
 def print_hi(name):
     # Use a breakpoint in the code line below to debug your script.
     print(f'Hi, {name}')  # Press ⌘F8 to toggle the breakpoint.
-    G = nx.read_gpickle("datasets/datasets/DD/data.pkl")
+    G = nx.read_gpickle("Graph Kernel/datasets/datasets/DD/data.pkl")
     print(data_utils.get_graph_label(G[1]))
 
 

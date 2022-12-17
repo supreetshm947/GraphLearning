@@ -7,9 +7,9 @@ import wl_kernel as wk
 
 
 def read_data():
-    nci1 = nx.read_gpickle("../datasets/datasets/NCI1/data.pkl")
-    dd = nx.read_gpickle("../datasets/datasets/DD/data.pkl")
-    enzymes = nx.read_gpickle("../datasets/datasets/ENZYMES/data.pkl")
+    nci1 = nx.read_gpickle("./datasets/datasets/NCI1/data.pkl")
+    dd = nx.read_gpickle("./datasets/datasets/DD/data.pkl")
+    enzymes = nx.read_gpickle("./datasets/datasets/ENZYMES/data.pkl")
     return dict({"nci1": nci1, "dd": dd, "enzymes": enzymes})
 
 
